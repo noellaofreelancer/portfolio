@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel Lao — Freelance Video Editor & Graphic Designer | Creative Portfolio</title>
+    <meta name="description" content="Freelance Video Editor & Graphic Designer portfolio showcasing cinematic videos, motion graphics, social media content, and professional branding. Crafting visual stories that leave an impact.">
+    <meta name="keywords" content="Freelance Video Editor, Graphic Designer, Video Editing Portfolio, Graphic Design Portfolio, Motion Graphics, Social Media Designer, Professional Video Editor, Creative Portfolio">
+    <meta name="author" content="Noel Lao">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Noel Lao — Freelance Video Editor & Graphic Designer">
+    <meta property="og:description" content="Crafting visual stories that leave an impact. Cinematic videos, motion graphics, branding & more.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80' fill='%23D4AF37'>N</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== LOADING SCREEN ========== -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-letter">N</span>
+                <span class="loader-letter">L</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CUSTOM CURSOR ========== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="image/Noel Lao Logo.png" alt="Noel Lao Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="nav-cta btn-primary">Let's Work Together</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <canvas class="hero-particles" id="heroParticles"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <span class="badge-dot"></span>
+                    Available for Freelance
+                </div>
+                <h1 class="hero-title reveal">
+                    Crafting Visual Stories<br>
+                    That Leave <span class="text-gradient">an Impact.</span>
+                </h1>
+                <p class="hero-subtitle reveal">
+                    Freelance Video Editor &amp; Graphic Designer creating cinematic videos, 
+                    engaging social media content, professional branding, and creative visuals 
+                    that help businesses and creators stand out.
+                </p>
+                <div class="hero-buttons reveal">
+                    <a href="#portfolio" class="btn-primary">
+                        <span>View Portfolio</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <span>Hire Me</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="cv.pdf" download class="btn-secondary btn-cv">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="hero-social reveal">
+                    <a href="https://www.facebook.com/noel.h.lao" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/noellaofreelance/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/noel-lao-52208541a/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=noellaofreelance@gmail.com"
+   class="social-link"
+   target="_blank"
+   rel="noopener"
+   aria-label="Email">
+    <i class="fas fa-envelope"></i>
+</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="hero-image-wrapper">
+                    <div class="hero-mockup">
+                        <div class="mockup-screen">
+                            <div class="mockup-timeline">
+                                <div class="timeline-track"></div>
+                                <div class="timeline-track"></div>
+                                <div class="timeline-track"></div>
+                                <div class="timeline-playhead"></div>
+                            </div>
+                        </div>
+                        <div class="mockup-tools">
+                            <span class="tool-icon"><i class="fas fa-play"></i></span>
+                            <span class="tool-icon"><i class="fas fa-cut"></i></span>
+                            <span class="tool-icon"><i class="fas fa-palette"></i></span>
+                            <span class="tool-icon"><i class="fas fa-magic"></i></span>
+                        </div>
+                    </div>
+                    <div class="floating-element float-1">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="floating-element float-2">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="floating-element float-3">
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image-container reveal">
+                    <div class="about-image">
+                        <div class="about-image-placeholder">
+                            <img src="image/Noel.png" alt="Noel Lao" class="about-profile-image">
+                        </div>
+                        <div class="about-image-border"></div>
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-number">5+</span>
+                        <span class="badge-text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <div class="section-header left-aligned">
+                        <span class="section-tag">About Me</span>
+                        <h2 class="section-title">Turning Ideas Into<br><span class="text-gradient">Visual Masterpieces</span></h2>
+                    </div>
+                    <p class="about-text">
+                        Hello! I'm a passionate freelance Video Editor and Graphic Designer 
+                        specializing in cinematic storytelling, promotional videos, social media content, 
+                        branding, posters, thumbnails, and digital marketing creatives.
+                    </p>
+                    <p class="about-text">
+                        My goal is to transform ideas into visually compelling content that captures 
+                        attention and delivers results. With years of experience working with brands, 
+                        creators, and businesses, I bring a unique blend of creativity and technical 
+                        expertise to every project.
+                    </p>
+                    <div class="about-cta">
+                        <a href="cv.pdf" download class="btn-primary btn-cv">
+                            <span>Download My CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <span>Let's Work Together</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="150">0</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="80">0</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="200">0</span>
+                            <span class="stat-suffix">+</span>
+                            <span class="stat-label">Videos Edited</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO SECTION ========== -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="text-gradient">Creative Work</span></h2>
+                <p class="section-subtitle">A curated selection of my best projects across video editing, graphic design, and motion graphics.</p>
+            </div>
+
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="video-editing">Video Editing</button>
+                <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+                <button class="filter-btn" data-filter="social-media">Social Media</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="short-form">Short Form</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Card 1 — Replace src with your image or video -->
+                <div class="portfolio-card reveal" data-category="video-editing">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <!-- VIDEO: Replace src with your .mp4 file -->
+                            <video src="video/Product Video Ads.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                            <div class="card-placeholder"><i class="fas fa-film"></i><span>Add Video</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">Luxury Brand Commercial</h3>
+                                <p class="card-category">Video Editing</p>
+                                <span class="card-desc">Cinematic commercial for a premium fashion brand with dramatic color grading and seamless transitions.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn play-btn" data-video="1"><i class="fas fa-play"></i></button>
+                                    <button class="card-btn view-btn" data-project="1"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 — Replace src with your image -->
+                <div class="portfolio-card reveal" data-category="graphic-design social-media">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <!-- IMAGE: Replace src with your .jpg/.png file -->
+                            <img src="image/Product Launch Campaign.png" alt="Social Media Campaign">
+                            <div class="card-placeholder"><i class="fas fa-palette"></i><span>Add Image</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">Social Media Campaign</h3>
+                                <p class="card-category">Graphic Design</p>
+                                <span class="card-desc">Complete social media design package for a tech startup's product launch campaign.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn view-btn" data-project="2"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 — Replace src with your video -->
+                <div class="portfolio-card reveal" data-category="video-editing">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <video src="video/Product Promo Video.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                            <div class="card-placeholder"><i class="fas fa-video"></i><span>Add Video</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">Product Promo Video</h3>
+                                <p class="card-category">Video Editing</p>
+                                <span class="card-desc">Eye-catching product promo with dynamic editing and kinetic typography.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn play-btn" data-video="3"><i class="fas fa-play"></i></button>
+                                    <button class="card-btn view-btn" data-project="3"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 — YouTube Channel Rebrand -->
+                <div class="portfolio-card reveal" data-category="video-editing youtube">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <video src="video/YT.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                            <div class="card-placeholder"><i class="fab fa-youtube"></i><span>Add Video</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">YouTube Channel Rebrand</h3>
+                                <p class="card-category">Video Editing / YouTube</p>
+                                <span class="card-desc">Full YouTube channel rebrand including banner, thumbnails, intro, and lower thirds.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn play-btn" data-video="4"><i class="fas fa-play"></i></button>
+                                    <button class="card-btn view-btn" data-project="4"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 — Replace src with your video -->
+                <div class="portfolio-card reveal" data-category="short-form social-media">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <video src="video/Doctor Angle.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                            <div class="card-placeholder"><i class="fab fa-instagram"></i><span>Add Video</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">Instagram Reels Package</h3>
+                                <p class="card-category">Short Form / Social Media</p>
+                                <span class="card-desc">Engaging Instagram Reels and TikTok content with trendy transitions and effects.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn play-btn" data-video="5"><i class="fas fa-play"></i></button>
+                                    <button class="card-btn view-btn" data-project="5"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 — Replace src with your video -->
+                <div class="portfolio-card reveal" data-category="video-editing">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <video src="video/video 1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                            <div class="card-placeholder"><i class="fas fa-video"></i><span>Add Video</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">Documentary Short Film</h3>
+                                <p class="card-category">Video Editing</p>
+                                <span class="card-desc">Award-worthy documentary editing with compelling narrative pacing and emotional depth.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn play-btn" data-video="6"><i class="fas fa-play"></i></button>
+                                    <button class="card-btn view-btn" data-project="6"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 — Real Estate Video -->
+                <div class="portfolio-card reveal" data-category="video-editing">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <video src="video/real estate.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                            <div class="card-placeholder"><i class="fas fa-building"></i><span>Add Video</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">Real Estate Showcase</h3>
+                                <p class="card-category">Video Editing</p>
+                                <span class="card-desc">Cinematic real estate walkthrough with aerial drone shots, smooth transitions, and premium color grading.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn play-btn" data-video="7"><i class="fas fa-play"></i></button>
+                                    <button class="card-btn view-btn" data-project="7"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 — Podcast -->
+                <div class="portfolio-card reveal" data-category="video-editing">
+                    <div class="card-image">
+                        <div class="card-thumbnail">
+                            <video src="video/Podcast video.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                            <div class="card-placeholder"><i class="fas fa-podcast"></i><span>Add Video</span></div>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3 class="card-title">Podcast Video Editing</h3>
+                                <p class="card-category">Video Editing</p>
+                                <span class="card-desc">Professional podcast editing with dynamic layouts, captions, engaging visuals, and crisp audio mixing.</span>
+                                <div class="card-actions">
+                                    <button class="card-btn play-btn" data-video="8"><i class="fas fa-play"></i></button>
+                                    <button class="card-btn view-btn" data-project="8"><i class="fas fa-expand"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO MODAL ========== -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="modal-media" id="modalMedia"></div>
+                <div class="modal-info">
+                    <h3 class="modal-title" id="modalTitle"></h3>
+                    <p class="modal-category" id="modalCategory"></p>
+                    <p class="modal-desc" id="modalDesc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">What I <span class="text-gradient">Offer</span></h2>
+                <p class="section-subtitle">Premium creative services tailored to elevate your brand and visual presence.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-film"></i></div>
+                    <h3 class="service-title">Video Editing</h3>
+                    <p class="service-desc">Professional video editing with cinematic color grading, seamless transitions, and compelling storytelling for any content type.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
+                    <h3 class="service-title">Graphic Design</h3>
+                    <p class="service-desc">Eye-catching graphic design for social media, marketing materials, presentations, and digital assets that stand out.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-image"></i></div>
+                    <h3 class="service-title">Thumbnail Design</h3>
+                    <p class="service-desc">Click-worthy YouTube and social media thumbnails designed to maximize engagement and increase click-through rates.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-hashtag"></i></div>
+                    <h3 class="service-title">Social Media Content</h3>
+                    <p class="service-desc">Scroll-stopping social media content including reels, stories, posts, and carousels optimized for engagement.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-scroll"></i></div>
+                    <h3 class="service-title">Poster Design</h3>
+                    <p class="service-desc">Stunning poster designs for events, promotions, and marketing campaigns that demand attention and drive action.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+                    <h3 class="service-title">Photo Editing</h3>
+                    <p class="service-desc">Professional photo retouching, color correction, compositing, and manipulation to make every image picture-perfect.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-sliders"></i></div>
+                    <h3 class="service-title">Color Grading</h3>
+                    <p class="service-desc">Cinematic color grading that sets the mood, enhances visual storytelling, and gives your footage a professional film look.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">Software <span class="text-gradient">Expertise</span></h2>
+                <p class="section-subtitle">The professional tools I use to bring creative visions to life.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon premiere">
+                        <span>Pr</span>
+                    </div>
+                    <h4 class="skill-name">Adobe Premiere Pro</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon photoshop">
+                        <span>Ps</span>
+                    </div>
+                    <h4 class="skill-name">Adobe Photoshop</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon filmora">
+                        <span>Fm</span>
+                    </div>
+                    <h4 class="skill-name">Filmora 15</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                    <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon canva">
+                        <span>Cv</span>
+                    </div>
+                    <h4 class="skill-name">Canva</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                    <span class="skill-percent">92%</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon capcut">
+                        <span>Cc</span>
+                    </div>
+                    <h4 class="skill-name">CapCut</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESS SECTION ========== -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">How I <span class="text-gradient">Work</span></h2>
+                <p class="section-subtitle">A streamlined creative process designed to deliver exceptional results every time.</p>
+            </div>
+            <div class="process-timeline reveal">
+                <div class="process-line"></div>
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Consultation</h3>
+                        <p>We discuss your vision, goals, target audience, and project requirements to ensure we're aligned from the start.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Planning</h3>
+                        <p>I create a detailed project roadmap, storyboards, and creative direction tailored to your brand and objectives.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Editing &amp; Design</h3>
+                        <p>The creative magic happens here — meticulous editing, designing, color grading, and polishing every detail to perfection.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Delivery</h3>
+                        <p>Final review, revisions if needed, and delivery in your preferred format — ready to publish and make an impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE ME ========== -->
+    <section class="section section-dark" id="why-choose">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Why Me</span>
+                <h2 class="section-title">Why <span class="text-gradient">Choose Me</span></h2>
+                <p class="section-subtitle">Here's what sets my work apart from the rest.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick turnaround without compromising quality. Your projects delivered on time, every time.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Attention to Detail</h3>
+                    <p>Every pixel, every frame, every cut is crafted with precision and meticulous care.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Unlimited Creativity</h3>
+                    <p>Fresh, innovative ideas that push boundaries and make your content truly unique.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-award"></i></div>
+                    <h3>Professional Quality</h3>
+                    <p>Industry-standard production quality that rivals top creative agencies.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-tag"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Premium creative services at competitive rates. Great value for exceptional work.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Client Satisfaction</h3>
+                    <p>Your satisfaction is my priority. Unlimited revisions until you're 100% happy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients <span class="text-gradient">Say</span></h2>
+                <p class="section-subtitle">Don't just take my word for it — here's what my clients have to say.</p>
+            </div>
+            <div class="testimonial-slider reveal">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-inner">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">Absolutely phenomenal work! The video exceeded all our expectations. The cinematic quality and attention to detail were outstanding. Will definitely work together again.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <span class="avatar-initials">JD</span>
+                                </div>
+                                <div class="author-info">
+                                    <h4>John Davidson</h4>
+                                    <p>CEO, TechVision Studios</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-inner">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">Incredible graphic design skills! Everything was completely transformed. The logos, social media templates, and marketing materials were all top-notch. Highly recommended!</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <span class="avatar-initials">SR</span>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Rodriguez</h4>
+                                    <p>Marketing Director, BrandWave</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-inner">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">The editing was next level! Our YouTube channel's engagement skyrocketed after the rebrand. Professional, creative, and incredibly fast turnaround. A true creative genius.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <span class="avatar-initials">MC</span>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Michael Chen</h4>
+                                    <p>YouTuber, 500K Subscribers</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-inner">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">Working with Noel was an absolute pleasure. The social media content created for our brand was engaging, visually stunning, and perfectly aligned with our vision. 10/10!</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <span class="avatar-initials">EP</span>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Emma Patel</h4>
+                                    <p>Founder, Luxe Lifestyle Co.</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prevTestimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn next-btn" id="nextTestimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Create <span class="text-gradient">Together</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's bring your vision to life.</p>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xkolborw" method="POST">
+                    <input type="hidden" name="_replyto" id="replyTo">
+                    <div class="form-group">
+                        <label for="contactName">Full Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="projectType">Project Type</label>
+                        <select id="projectType" name="projectType" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="video-editing">Video Editing</option>
+                            <option value="graphic-design">Graphic Design</option>
+                            <option value="thumbnail-design">Thumbnail Design</option>
+                            <option value="social-media">Social Media Content</option>
+                            <option value="poster-design">Poster Design</option>
+                            <option value="photo-editing">Photo Editing</option>
+                            <option value="color-grading">Color Grading</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="contactMessage">Your Message</label>
+                        <textarea id="contactMessage" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn">
+                        <span>Start Your Project</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="contact-info reveal">
+                    <h3 class="contact-info-title">Get in Touch</h3>
+                    <p class="contact-info-desc">Feel free to reach out through any of these channels. I typically respond within 24 hours.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hello@noellao.com">noellaofreelance@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-facebook-f"></i></div>
+                            <div>
+                                <h4>Facebook</h4>
+                                <a href="#" target="_blank">https://www.facebook.com/noel.h.lao</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-instagram"></i></div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="#" target="_blank">@noellaofreelance</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-tiktok"></i></div>
+                            <div>
+                                <h4>TikTok</h4>
+                                <a href="#" target="_blank">@noellao</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="#">+63 906 007 2442</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo"><img src="image/Noel Lao Logo.png" alt="Noel Lao Logo" class="footer-logo-img"></h3>
+                    <p>Crafting visual stories that leave an impact. Freelance Video Editor &amp; Graphic Designer available for creative projects worldwide.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Video Editing</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Social Media</a></li>
+                        <li><a href="#services">Thumbnail Design</a></li>
+                        <li><a href="#services">Poster Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/noel.h.lao" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/noellaofreelance/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/noel-lao-52208541a/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=noellaofreelance@gmail.com&su=Freelance%20Project%20Inquiry&body=Hi%20Noel,%0A%0AI'd%20like%20to%20discuss%20a%20project%20with%20you.%0A%0AThank%20you!"
+   aria-label="Email"
+   target="_blank"
+   rel="noopener">
+    <i class="fas fa-envelope"></i>
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Noel Lao. All rights reserved. Crafted with passion and creativity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========== FLOATING CONTACT ========== -->
+    <a href="https://wa.me/" class="floating-contact" id="floatingContact" target="_blank" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
